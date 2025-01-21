@@ -1,0 +1,10 @@
+include:
+  - jellyfin.yml
+  - jellyseerr.yml
+  - sonarr.yml
+  - radarr.yml
+  - prowlarr.yml
+  - qbittorrent.yml
+
+  - memos.yml
+

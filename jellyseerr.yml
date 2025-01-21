@@ -1,0 +1,15 @@
+services:
+  jellyseerr:
+    image: fallenbagel/jellyseerr:latest
+    container_name: jellyseerr
+    environment:
+      - LOG_LEVEL=debug
+      - PUID=1000
+      - GUID=1000
+      - TZ=America/Los_Angeles
+      - PORT=5055
+    ports:
+      - 5055:5055
+    volumes:
+      - /home/carl/data/jellyseerr/config:/app/config
+    restart: unless-stopped
